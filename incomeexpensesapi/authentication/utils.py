@@ -1,6 +1,6 @@
 from django.core.mail import EmailMessage
 
-
+"""send mail"""
 class Util:
 
     @staticmethod
