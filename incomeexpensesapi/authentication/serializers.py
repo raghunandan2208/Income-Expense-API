@@ -76,7 +76,7 @@ class ResetPasswordEmailRequestSerializer(serializers.Serializer):
     class Meta:
         fields = ['email']
 
-
+"""For setting new password"""
 class SetNewPasswordSerializer(serializers.Serializer):
     password = serializers.CharField(min_length=6, max_length=68, write_only=True)
     token = serializers.CharField(min_length=1, write_only=True)
